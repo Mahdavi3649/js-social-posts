@@ -1,0 +1,53 @@
+body{
+    background-color: #023047;
+    font-family: 'Roboto', sans-serif;
+}
+
+ h1{
+    font-family: 'Oswald', sans-serif;
+ }
+
+#page_header{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.post{
+    width: 50%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #fdfbf5;
+}
+
+.post_header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.post_header > img{
+    width: 50px;
+    border-radius: 40px;
+}
+
+.published{
+    margin: 0 20px;
+}
+
+.post_main > img{
+    width: 100%;
+}
+
+.post_footer{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.add_like,
+.total_like {
+    font-weight: bold;
+}
