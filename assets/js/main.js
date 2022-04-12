@@ -7,6 +7,8 @@
 
 
 //  creare dell'Array di oggetti per post:
+
+
 const posts = [
     {
         id: "1",
@@ -15,7 +17,7 @@ const posts = [
         writer: "Phil Mangione",
         imgAvatar: "https://i.picsum.photos/id/15/300/300.jpg?hmac=duO4muNveDNzr4xn5Eqb6hWLvRdkHkS-F4mMsa6p6jg",
         likes: 33,
-        creationDate: Date()
+        creationDate: "22/3/2021"
     },
     {
         id: "2",
@@ -24,7 +26,7 @@ const posts = [
         writer: "Sofia Perlari",
         imgAvatar: "https://i.picsum.photos/id/871/300/300.jpg?hmac=LHkUU7reAw_BdSJEy71TImEmdN5e8tw8-MxQljjitPg",
         likes: 57,
-        creationDate: Date()
+        creationDate: "09/01/2022"
     }
 ]
 
@@ -40,7 +42,7 @@ for (i=0; i<posts.length; i++) {
             <header class="post_header">
                 <img src=${post.imgAvatar} alt="">
                 <section class="published">
-                    <h4>${post.writer}</h4>
+                 <div><h4>${post.writer}</h4></div>   
                     <div>${post.creationDate}</div>
                 </section>
             </header>
@@ -52,10 +54,25 @@ for (i=0; i<posts.length; i++) {
                 <div class="add_like"><i class="fa-solid fa-thumbs-up"></i> Mi piace</div>
                 <div class="total_like">Piace a ${post.likes} persone</div>
             </footer>
-        </div>
-    `
+        </div>`
+
     document.querySelector(".container").insertAdjacentHTML("beforebegin", postPrinted);
 
+
+   
+
 }
+
+ /* Milestone 3 */
+/*  Se clicchiamo sul tasto "Mi Piace" cambiamo il colore al testo del bottone e incrementiamo il counter dei likes relativo. Salviamo in un secondo array gli id dei post ai quali abbiamo messo il like.
+ */ 
+        const likeElement = document.querySelector('.add_like')
+        //ascolto per il click
+        likeElement.addEventListener('click', function () {
+            //coloro di blue al click
+            likeElement.classList.add("blue")
+        })
+
+
 
 

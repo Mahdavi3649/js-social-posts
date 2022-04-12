@@ -22,7 +22,7 @@ body{
 }
 
 .post_header{
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
 }
@@ -49,5 +49,9 @@ body{
 
 .add_like,
 .total_like {
-    font-weight: bold;
+    cursor: pointer;
+}
+
+.blue{
+    color: blue;
 }
